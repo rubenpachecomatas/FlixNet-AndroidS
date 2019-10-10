@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hint_password">Contraseña</string>
+    <string name="label_register" translatable="false">Registrar</string>
+    <string name="label_login" translatable="false">Entrar</string>
+    <string name="hint_name">Nombre</string>
+    <string name="hint_lastname" translatable="false">Apellidos</string>
+    <string name="hint_confirmpassword">Repite la contraseña</string>
+    <string name="hint_nacionality">Nacionalidad</string>
+</resources>
