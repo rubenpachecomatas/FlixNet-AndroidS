@@ -1,5 +1,6 @@
 package com.example.flixnet;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.ViewModelProvider;
 
@@ -16,7 +17,6 @@ public class MainActivity extends AppCompatActivity {
 
     private Button btnLog, btnReg;
     public final int COD_REGISTRO = 666;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,7 +60,22 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+    } // end-onCreate
 
+    /**
+     *
+     * @param requestCode
+     * @param resultCode
+     * @param data
+     */
 
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data)
+    {
+        if(requestCode==COD_REGISTRO)
+            if (resultCode==RESULT_OK)
+                //Toast.makeText(getApplication(), text:"Pues eso", Toast.LENGTH_LONG).show();
+
+        super.onActivityResult(requestCode, resultCode, data);
     }
 }

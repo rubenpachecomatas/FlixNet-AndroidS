@@ -20,4 +20,5 @@
         <item>Alemania</item>
         <item>Estados Unidos</item>
     </string-array>
+    <string name="label_ok" translatable="false">OK</string>
 </resources>
